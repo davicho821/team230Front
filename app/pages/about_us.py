@@ -1,4 +1,4 @@
-from turtle import width
+from turtle import clear, width
 import dash
 from dash import html , dcc
 import dash_bootstrap_components as dbc
@@ -9,6 +9,153 @@ layout = html.Div(
     dbc.Container(
         [
             html.H1("About us", className="display-3"),
+            
+            html.Div(
+                [
+                    dbc.Row(
+                        [
+                            dbc.Col(dbc.Card(
+    [
+        dbc.CardImg(src="/assets/imgs/fernando.jpg", top=True),
+        dbc.CardBody(
+            [
+                html.H4("Fernando Mendoza", className="card-title"),
+                html.P(
+                    "Químico - Ingeniero químico",
+                    className="card-text",
+                ),
+                dbc.Button("LinkedIn Profile", color="primary"),
+            ]
+        ),
+    ],
+    style={"width": "18rem"},
+),),
+                            dbc.Col(dbc.Card(
+    [
+        dbc.CardImg(src="/assets/imgs/caro.jpg", top=True),
+        dbc.CardBody(
+            [
+                html.H4("Carolay Helena Meza", className="card-title"),
+                html.P(
+                    "Administradora de Mercadeo",
+                    className="card-text",
+                ),
+                dbc.Button("LinkedIn Profile", color="primary"),
+            ]
+        ),
+    ],
+    style={"width": "18rem"},
+),),
+                            dbc.Col(dbc.Card(
+    [
+        dbc.CardImg(src="/assets/imgs/mathilda.jpg", top=True),
+        dbc.CardBody(
+            [
+                html.H4("Mathilda Campillo", className="card-title"),
+                html.P(
+                    "Matemática",
+                    className="card-text",
+                ),
+                dbc.Button("LinkedIn Profile", color="primary"),
+            ]
+        ),
+    ],
+    style={"width": "18rem"},
+),),
+                            dbc.Col(dbc.Card(
+    [
+        dbc.CardImg(src="/assets/imgs/jhonatan.jpg", top=True),
+        dbc.CardBody(
+            [
+                html.H4("Jhonatan Archila", className="card-title"),
+                html.P(
+                    "Ingeniero Agrícola",
+                    className="card-text",
+                ),
+                dbc.Button("LinkedIn Profile", color="primary"),
+            ]
+        ),
+    ],
+    style={"width": "18rem"},
+),),
+                        ]
+                    ),
+                ]
+            ),
+
+            html.Div(
+                [
+                    dbc.Row(
+                        [
+                            dbc.Col(dbc.Card(
+    [
+        dbc.CardImg(src="/assets/imgs/sebastian.jpg", top=True),
+        dbc.CardBody(
+            [
+                html.H4("Sebastian Chaparro", className="card-title"),
+                html.P(
+                    "Magister en ingeniería de sistemas y computación",
+                    className="card-text",
+                ),
+                dbc.Button("LinkedIn Profile", color="primary"),
+            ]
+        ),
+    ],
+    style={"width": "18rem"},
+),),
+                            dbc.Col(dbc.Card(
+    [
+        dbc.CardImg(src="/assets/imgs/diego.jpg", top=True),
+        dbc.CardBody(
+            [
+                html.H4("Diego Castañeda", className="card-title"),
+                html.P(
+                    "Estadístico",
+                    className="card-text",
+                ),
+                dbc.Button("LinkdIn Profile", color="primary"),
+            ]
+        ),
+    ],
+    style={"width": "18rem"},
+),),
+                            dbc.Col(dbc.Card(
+    [
+        dbc.CardImg(src="/assets/imgs/juan.jpg", top=True),
+        dbc.CardBody(
+            [
+                html.H4("Juan Pablo Martínez", className="card-title"),
+                html.P(
+                    "Profesión",
+                    className="card-text",
+                ),
+                dbc.Button("LinkedIn Profile", color="primary"),
+            ]
+        ),
+    ],
+    style={"width": "18rem"},
+),),
+                            dbc.Col(dbc.Card(
+    [
+        dbc.CardImg(src="/assets/imgs/david.png", top=True),
+        dbc.CardBody(
+            [
+                html.H4("David Vargas", className="card-title"),
+                html.P(
+                    "Ingeniero de sistemas y computación",
+                    className="card-text",
+                ),
+                dbc.Button("LinkedIn Profile", color="primary"),
+            ]
+        ),
+    ],
+    style={"width": "18rem"},
+),),
+                        ]
+                    ),
+                ]
+            ),
+            
             html.P(
                 "Here goes main information...",
                 className="lead",
@@ -17,119 +164,6 @@ layout = html.Div(
             html.P(
                 "Here goes main information...",
             ),
-            
-            dbc.Card(
-            [
-                dbc.Row(
-                    [
-                        dbc.Col(
-                            dbc.CardImg(
-                                src="/assets/imgs/carolay.jpg",
-                                className="img-fluid rounded-start",
-                            ),
-                            className="col-md-4",
-                        ),
-                        dbc.Col(
-                            dbc.CardBody(
-                                [
-                                    html.H4("Carolay Helena", className="card-title"),
-                                    html.P(
-                                        "This is a wider card with supporting text "
-                                        "below as a natural lead-in to additional "
-                                        "content. This content is a bit longer.",
-                                        className="card-text",
-                                    ),
-                                    html.Small(
-                                        "LinkedIn Profile",
-                                        className="card-text text-muted",
-                                    ),
-                                ]
-                            ),
-                            className="col-md-8",
-                        ),
-                    ],
-                    className="g-0 d-flex align-items-center",
-                )
-            ],                                  
-    className="mb-3",
-    style={"maxWidth": "540px"},
-),
-
-            dbc.Card(
-                        [
-                            dbc.Row(
-                                [
-                                    dbc.Col(
-                                        dbc.CardImg(
-                                            src="/assets/imgs/mathilda.jpg",
-                                            className="img-fluid rounded-start",
-                                        ),
-                                        className="col-md-4",
-                                    ),
-                                    dbc.Col(
-                                        dbc.CardBody(
-                                            [
-                                                html.H4("Mathilda", className="card-title"),
-                                                html.P(
-                                                    "This is a wider card with supporting text "
-                                                    "below as a natural lead-in to additional "
-                                                    "content. This content is a bit longer.",
-                                                    className="card-text",
-                                                ),
-                                                html.Small(
-                                                    "LinkedIn Profile",
-                                                    className="card-text text-muted",
-                                                ),
-                                            ]
-                                        ),
-                                        className="col-md-8",
-                                    ),
-                                ],
-                                className="g-0 d-flex align-items-center",
-                            )
-                        ],                                  
-                className="mb-3",
-                style={"maxWidth": "540px"},
-            ),
-
-            dbc.Card(
-            [
-                dbc.Row(
-                    [
-                        dbc.Col(
-                            dbc.CardImg(
-                                src="/assets/imgs/strange.jpg",
-                                className="img-fluid rounded-start",
-                            ),
-                            className="col-md-4",
-                        ),
-                        dbc.Col(
-                            dbc.CardBody(
-                                [
-                                    html.H4("Dr. Strange", className="card-title"),
-                                    html.P(
-                                        "This is a wider card with supporting text "
-                                        "below as a natural lead-in to additional "
-                                        "content. This content is a bit longer.",
-                                        className="card-text",
-                                    ),
-                                    html.Small(
-                                        "LinkedIn Profile",
-                                        className="card-text text-muted",
-                                    ),
-                                ]
-                            ),
-                            className="col-md-8",
-                        ),
-                    ],
-                    className="g-0 d-flex align-items-center",
-                )
-            ],                                  
-    className="mb-3",
-    style={"maxWidth": "540px"},
-),
-
-
             html.P(
                 dbc.Button("Learn more", color="primary"), className="lead"
             ),

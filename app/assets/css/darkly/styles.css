@@ -1,8 +1,12 @@
 .dbc {
-    background-color: white;
-    color: black;
+    background-color: white; /* Color de fondo contenedor principal */
+    color: black; /* Color de letra contenedor principal */
 }
 
-.mb-3 {
-    color: white
+.card-title, .card-text {
+    color: white /* Color letras tarjetas about us */
+}
+
+.row{
+    margin-bottom: 20px;
 }
