@@ -24,7 +24,7 @@ layout = html.Div(
                     "Químico - Ingeniero químico",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="primary"),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/fernando-mendoza-rangel-aa81b2142", external_link=True, target="_blank",),
             ]
         ),
     ],
@@ -40,7 +40,7 @@ layout = html.Div(
                     "Administradora de Mercadeo",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="primary"),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/carolay-helena-meza-mesa-078a69226/", external_link=True, target="_blank",),
             ]
         ),
     ],
@@ -56,7 +56,7 @@ layout = html.Div(
                     "Matemática",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="primary"),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/mathilda-campillo-abuchaibe-9538b2235/", external_link=True, target="_blank",),
             ]
         ),
     ],
@@ -72,7 +72,7 @@ layout = html.Div(
                     "Ingeniero Agrícola",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="primary"),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/jhonatanarchila/", external_link=True, target="_blank",),
             ]
         ),
     ],
@@ -97,7 +97,7 @@ layout = html.Div(
                     "Magister en ingeniería de sistemas y computación",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="primary"),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/sebastian-chaparro-079b2a157/", external_link=True, target="_blank",),
             ]
         ),
     ],
@@ -113,7 +113,7 @@ layout = html.Div(
                     "Estadístico",
                     className="card-text",
                 ),
-                dbc.Button("LinkdIn Profile", color="primary"),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/diegofercas/", external_link=True, target="_blank",),
             ]
         ),
     ],
@@ -129,7 +129,7 @@ layout = html.Div(
                     "Profesión",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="primary"),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/juan-pablo-mart%C3%ADnez-betancur-8a62611b0/", external_link=True, target="_blank",),
             ]
         ),
     ],
@@ -145,7 +145,7 @@ layout = html.Div(
                     "Ingeniero de sistemas y computación",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="primary"),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/dvargasvalencia/", external_link=True, target="_blank",),
             ]
         ),
     ],
