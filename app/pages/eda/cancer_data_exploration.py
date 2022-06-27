@@ -136,7 +136,7 @@ geoplot_component : GeoPlot = GeoPlot(cancer_data, population_data, geojson, 'ca
 
 layout = dbc.Container(
     [
-        html.H1("Cancer data exploration"),
+        html.H1("Why We Care?"),
         html.Hr(),
         dbc.Tabs(
             [

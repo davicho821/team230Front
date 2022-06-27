@@ -11,12 +11,12 @@ layout = html.Div(
             dbc.Carousel(
             items=[
                 {"key": "1", "src": "/assets/imgs/slide01.jpg"},
-                {"key": "2", "src": "/assets/imgs/slide02.jpg"},
-                {"key": "3", "src": "/assets/imgs/slide03.jpg"},
+                #{"key": "2", "src": "/assets/imgs/slide02.jpg"},
+                #{"key": "3", "src": "/assets/imgs/slide03.jpg"},
             ],
-            controls=True,
-            indicators=False,
-            interval=5000,
+            #controls=True,
+            #indicators=False,
+            #interval=5000,
             ride="carousel",
             ),
             html.P(

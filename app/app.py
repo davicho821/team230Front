@@ -7,7 +7,7 @@ import dash_bootstrap_components as dbc
 ### Dash instance ###
 app = dash.Dash(__name__,
     use_pages=True,
-    external_stylesheets=[dbc.themes.SOLAR],  #Se cambió tema
+    #external_stylesheets=[dbc.themes.SOLAR],  #Se cambió tema
     update_title='Loading...'
 )
 
@@ -20,8 +20,9 @@ navbar = dbc.NavbarSimple(
     ],
     brand="Breast Cancer Team-230",
     brand_href="#",
-    color="success", #Colores definidos en el archivo bootstrap.css
+    color="dark", #Colores definidos en el archivo bootstrap.css
     dark=True,
+    style={"height":180, "fontSize":20}
 )
 
 #Main layout
