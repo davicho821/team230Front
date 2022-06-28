@@ -10,7 +10,7 @@ layout =dbc.Container(
             html.H1("About us"),
             html.Hr(),
             html.P("""Cancer is relentless. But so are we. Don't hesitate to contact us
-for any further information""", style={"textAlign":"center", "fontSize":20}),
+            for any further information""", style={"textAlign": "center", "fontSize": 25}),
             html.Hr(),
             html.Div(
                 [
@@ -163,8 +163,6 @@ for any further information""", style={"textAlign":"center", "fontSize":20}),
             ),
             
         ],
-        fluid=True,
-        #className="py-3",
+        fluid=True, style={"height": "150vh", "backgroundColor":"#E7F2F3"}
     ),
-    #className="p-3 rounded-3",
-    #style={"display":"flex", "align":"center"},
+

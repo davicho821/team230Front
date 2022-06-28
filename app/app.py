@@ -20,7 +20,7 @@ navbar = dbc.NavbarSimple(
         if page["module"] != "pages.not_found_404"
     ],
     brand="CANCER SEARCH",
-    brand_href="#",
+    brand_href="/",
     color="dark", #Colores definidos en el archivo bootstrap.css
     dark=True,
     style={"height":180, "fontSize":20},

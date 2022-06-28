@@ -114,7 +114,7 @@ layout = html.Div(
             ]
         )
     ],
-    style={"height": "100vh"},
+    style={"height": "100vh", "backgroundColor":"#E7F2F3"}
 )
 
 #Callbacks
