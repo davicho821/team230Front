@@ -5,12 +5,12 @@ import dash_bootstrap_components as dbc
 
 dash.register_page(__name__, path="/about-us")
 
-layout = html.Div(
-    dbc.Container(
+layout =dbc.Container(
         [
             html.H1("About us"),
             html.Hr(),
-            html.P("Cancer text"),
+            html.P("""Cancer is relentless. But so are we. Don't hesitate to contact us
+for any further information""", style={"textAlign":"center", "fontSize":20}),
             html.Hr(),
             html.Div(
                 [
@@ -30,8 +30,9 @@ layout = html.Div(
             ]
         ),
     ],
-    style={"width": "18rem"},
-),),
+    #style={"width": "18rem"}, 
+    
+),width=6, lg=3),
                             dbc.Col(dbc.Card(
     [
         dbc.CardImg(src="/assets/imgs/caro.jpg", top=True),
@@ -46,8 +47,9 @@ layout = html.Div(
             ]
         ),
     ],
-    style={"width": "18rem"},
-),),
+    #style={"width": "18rem"}, 
+    
+),width=6, lg=3),
                             dbc.Col(dbc.Card(
     [
         dbc.CardImg(src="/assets/imgs/mathilda.jpg", top=True),
@@ -62,8 +64,9 @@ layout = html.Div(
             ]
         ),
     ],
-    style={"width": "18rem"},
-),),
+    #style={"width": "18rem"}, 
+    
+),width=6, lg=3),
                             dbc.Col(dbc.Card(
     [
         dbc.CardImg(src="/assets/imgs/jhonatan.jpg", top=True),
@@ -78,8 +81,9 @@ layout = html.Div(
             ]
         ),
     ],
-    style={"width": "18rem"},
-),),
+    #style={"width": "18rem"}, 
+    
+),width=6, lg=3),
                         ]
                     ),
                 ]
@@ -103,8 +107,8 @@ layout = html.Div(
             ]
         ),
     ],
-    style={"width": "18rem"},
-),),
+    #style={"width": "18rem"},
+),width=6, lg=3),
                             dbc.Col(dbc.Card(
     [
         dbc.CardImg(src="/assets/imgs/diego.jpg", top=True),
@@ -119,8 +123,8 @@ layout = html.Div(
             ]
         ),
     ],
-    style={"width": "18rem"},
-),),
+    #style={"width": "18rem"},
+),width=6, lg=3),
                             dbc.Col(dbc.Card(
     [
         dbc.CardImg(src="/assets/imgs/juan.jpg", top=True),
@@ -128,15 +132,15 @@ layout = html.Div(
             [
                 html.H4("Juan Pablo Martínez", className="card-title"),
                 html.P(
-                    "Profesión",
+                    "Ingeniero Ambiental",
                     className="card-text",
                 ),
                 dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/juan-pablo-mart%C3%ADnez-betancur-8a62611b0/", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
-    style={"width": "18rem"},
-),),
+    #style={"width": "18rem"},
+),width=6, lg=3),
                             dbc.Col(dbc.Card(
     [
         dbc.CardImg(src="/assets/imgs/david.png", top=True),
@@ -151,21 +155,16 @@ layout = html.Div(
             ]
         ),
     ],
-    style={"width": "18rem"},
-),),
+    #style={"width": "18rem"},
+),width=6, lg=3),
                         ]
                     ),
                 ]
             ),
             
-            html.P(
-                "Here goes main information...",
-                className="lead",
-            ),
         ],
         fluid=True,
         #className="py-3",
     ),
     #className="p-3 rounded-3",
     #style={"display":"flex", "align":"center"},
-)

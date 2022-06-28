@@ -10,7 +10,7 @@ layout = html.Div(
             #html.H1("Breast Cancer", className="display-3"),
             dbc.Carousel(
             items=[
-                {"key": "1", "src": "/assets/imgs/slide01.jpg"},
+                {"key": "1", "src": "/assets/imgs/slide01.png"},
                 #{"key": "2", "src": "/assets/imgs/slide02.jpg"},
                 #{"key": "3", "src": "/assets/imgs/slide03.jpg"},
             ],
