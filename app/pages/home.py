@@ -19,17 +19,13 @@ layout = html.Div(
             #interval=5000,
             ride="carousel",
             ),
+
+            
             html.P(
                 "Here goes main information...",
                 className="lead",
             ),
-            html.Hr(className="my-2"),
-            html.P(
-                "Here goes main information...",
-            ),
-            html.P(
-                dbc.Button("Learn more", color="primary"), className="lead"
-            ),
+            html.Hr(className="my-2"),            
         ],
         fluid=True,
         className="py-3",

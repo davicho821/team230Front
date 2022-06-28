@@ -1,6 +1,7 @@
 import dash
 import dash_labs as dl
 import dash_bootstrap_components as dbc
+from dash import html
 
 
 
@@ -18,11 +19,23 @@ navbar = dbc.NavbarSimple(
         for page in dash.page_registry.values()
         if page["module"] != "pages.not_found_404"
     ],
-    brand="Breast Cancer Team-230",
+    brand="CANCER SEARCH",
     brand_href="#",
     color="dark", #Colores definidos en el archivo bootstrap.css
     dark=True,
-    style={"height":180, "fontSize":20}
+    style={"height":180, "fontSize":20},
+    brand_style={"fontSize":35, "color":"hotpink"}
+)
+
+footer = html.Footer(
+    children=[
+        dbc.Nav(
+        [
+        dbc.NavItem(dbc.NavLink("All rights reserved", active=True, href="#")),
+        ],
+        style={"height":60, "fontSize":20, "color":"dark"},
+        )
+    ],
 )
 
 #Main layout
@@ -30,6 +43,7 @@ app.layout = dbc.Container(
     [
         navbar,
         dash.page_container,
+        footer,
     ],
     className="dbc",
     fluid=True,
@@ -42,3 +56,4 @@ server = app.server
 # Testing server, don't use in production, host
 if __name__ == "__main__":
     app.run(debug=True)
+    #app.run()

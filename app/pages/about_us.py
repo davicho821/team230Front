@@ -8,8 +8,10 @@ dash.register_page(__name__, path="/about-us")
 layout = html.Div(
     dbc.Container(
         [
-            html.H1("About us", className="display-3"),
-            
+            html.H1("About us"),
+            html.Hr(),
+            html.P("Cancer text"),
+            html.Hr(),
             html.Div(
                 [
                     dbc.Row(
@@ -24,7 +26,7 @@ layout = html.Div(
                     "Químico - Ingeniero químico",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/fernando-mendoza-rangel-aa81b2142", external_link=True, target="_blank",),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/fernando-mendoza-rangel-aa81b2142", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
@@ -40,7 +42,7 @@ layout = html.Div(
                     "Administradora de Mercadeo",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/carolay-helena-meza-mesa-078a69226/", external_link=True, target="_blank",),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/carolay-helena-meza-mesa-078a69226/", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
@@ -56,7 +58,7 @@ layout = html.Div(
                     "Matemática",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/mathilda-campillo-abuchaibe-9538b2235/", external_link=True, target="_blank",),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/mathilda-campillo-abuchaibe-9538b2235/", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
@@ -72,7 +74,7 @@ layout = html.Div(
                     "Ingeniero Agrícola",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/jhonatanarchila/", external_link=True, target="_blank",),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/jhonatanarchila/", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
@@ -97,7 +99,7 @@ layout = html.Div(
                     "Magister en ingeniería de sistemas y computación",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/sebastian-chaparro-079b2a157/", external_link=True, target="_blank",),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/sebastian-chaparro-079b2a157/", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
@@ -113,7 +115,7 @@ layout = html.Div(
                     "Estadístico",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/diegofercas/", external_link=True, target="_blank",),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/diegofercas/", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
@@ -129,7 +131,7 @@ layout = html.Div(
                     "Profesión",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/juan-pablo-mart%C3%ADnez-betancur-8a62611b0/", external_link=True, target="_blank",),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/juan-pablo-mart%C3%ADnez-betancur-8a62611b0/", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
@@ -145,7 +147,7 @@ layout = html.Div(
                     "Ingeniero de sistemas y computación",
                     className="card-text",
                 ),
-                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/dvargasvalencia/", external_link=True, target="_blank",),
+                dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/dvargasvalencia/", external_link=True, target="_blank", className="d-grid gap-2",),
             ]
         ),
     ],
@@ -160,16 +162,10 @@ layout = html.Div(
                 "Here goes main information...",
                 className="lead",
             ),
-            html.Hr(className="my-2"),
-            html.P(
-                "Here goes main information...",
-            ),
-            html.P(
-                dbc.Button("Learn more", color="primary"), className="lead"
-            ),
         ],
         fluid=True,
-        className="py-3",
+        #className="py-3",
     ),
-    className="p-3 rounded-3",
+    #className="p-3 rounded-3",
+    #style={"display":"flex", "align":"center"},
 )

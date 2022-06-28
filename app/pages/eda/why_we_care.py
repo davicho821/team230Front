@@ -138,6 +138,18 @@ layout = dbc.Container(
     [
         html.H1("Why We Care?"),
         html.Hr(),
+        html.P("""In the beginning of 2020, 2.3 million women were diagnosed with breast cancer (BCa) and 685,000 women
+died of the same disease. As of the end of 2020, there were a total of 7.8 million women alive and diagnosed
+with breast cancer. Data collected from a sample of 196 countries from 1990 to 2015 demonstrate
+an increase in mortality rate. Year over year since 1995, the mortality rate of breast cancer has steadily
+increased by 0.7 deaths per 100,000 people per year. It is important to mention that in Colombia, just
+for 2021, it was the most common cancer in women with 28% of the total cases."""),
+        html.P("""We are interested in describing the panorama of cancer in Colombia, looking for the behavior of a specific
+cancer: breast cancer.For this project we will be using mainly the database called Non-Fetal Deaths,
+which consolidates the causes of death in the country by area and sex, according to department of occurrence
+and residence, place of death, age of the deceased and level of education, this database contains
+only information from 2020."""),
+        html.Hr(),
         dbc.Tabs(
             [
                 dbc.Tab(barplot_component.display(), label="Bar plot", tab_id="bar"),

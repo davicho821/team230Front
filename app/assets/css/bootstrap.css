@@ -4173,6 +4173,7 @@ fieldset:disabled .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  color: var(--bs-pink);
 }
 
 .nav-link {
