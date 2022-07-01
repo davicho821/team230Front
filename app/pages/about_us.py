@@ -18,28 +18,17 @@ layout =dbc.Container(
                         [
                             dbc.Col(dbc.Card(
                                         [
-                                            dbc.CardImg(src="/assets/imgs/fernando.jpg", top=True),
+                                            dbc.CardImg(src="/assets/imgs/jhonatan.jpg", top=True),
                                             dbc.CardBody(
                                                 [
-                                                    html.H4("Fernando Mendoza", className="card-title"),
-                                                    html.P("Químico - Ingeniero químico", className="card-text",),
-                                                    dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/fernando-mendoza-rangel-aa81b2142", external_link=True, target="_blank", className="d-grid gap-2",),
+                                                    html.H4("Jhonatan Archila", className="card-title"),
+                                                    html.P("Ingeniero Agrícola", className="card-text",),
+                                                    dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/jhonatanarchila/", external_link=True, target="_blank", className="d-grid gap-2",),
                                                 ]
                                             ),
                                         ],
-                                    ), width=6, lg=3),
-                            dbc.Col(dbc.Card(
-                                        [
-                                            dbc.CardImg(src="/assets/imgs/caro.jpg", top=True),
-                                            dbc.CardBody(
-                                                [
-                                                    html.H4("Carolay Helena Meza", className="card-title"),
-                                                    html.P("Administradora de Mercadeo", className="card-text",),
-                                                    dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/carolay-helena-meza-mesa-078a69226/", external_link=True, target="_blank", className="d-grid gap-2",),
-                                                ]
-                                            ),
-                                        ],                                      
-                                    ), width=6, lg=3),
+                                    ),width=6, lg=3),
+
                             dbc.Col(dbc.Card(
                                         [
                                             dbc.CardImg(src="/assets/imgs/mathilda.jpg", top=True),
@@ -52,26 +41,6 @@ layout =dbc.Container(
                                             ),
                                         ],
                                     ),width=6, lg=3),
-                            dbc.Col(dbc.Card(
-                                        [
-                                            dbc.CardImg(src="/assets/imgs/jhonatan.jpg", top=True),
-                                            dbc.CardBody(
-                                                [
-                                                    html.H4("Jhonatan Archila", className="card-title"),
-                                                    html.P("Ingeniero Agrícola", className="card-text",),
-                                                    dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/jhonatanarchila/", external_link=True, target="_blank", className="d-grid gap-2",),
-                                                ]
-                                            ),
-                                        ],
-                                    ),width=6, lg=3),
-                        ]   
-                    ),
-                ]
-            ),
-            html.Div(
-            [
-                    dbc.Row(
-                    [
 
                             dbc.Col(dbc.Card(
                                         [
@@ -85,7 +54,7 @@ layout =dbc.Container(
                                             ),
                                         ],
                                     ),width=6, lg=3),
-                            
+
                             dbc.Col(dbc.Card(
                                         [
                                             dbc.CardImg(src="/assets/imgs/diego.jpg", top=True),
@@ -98,7 +67,15 @@ layout =dbc.Container(
                                             ),
                                         ],
                                     ),width=6, lg=3),
-                            
+                        ]   
+                    ),
+                ]
+            ),
+            html.Div(
+            [
+                    dbc.Row(
+                    [                         
+                          
                             dbc.Col(dbc.Card(
                                         [
                                             dbc.CardImg(src="/assets/imgs/juan.jpg", top=True),
@@ -111,6 +88,33 @@ layout =dbc.Container(
                                             ),
                                         ],
                                     ),width=6, lg=3),
+
+                            dbc.Col(dbc.Card(
+                                        [
+                                            dbc.CardImg(src="/assets/imgs/fernando.jpg", top=True),
+                                            dbc.CardBody(
+                                                [
+                                                    html.H4("Fernando Mendoza", className="card-title"),
+                                                    html.P("Químico - Ingeniero químico", className="card-text",),
+                                                    dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/fernando-mendoza-rangel-aa81b2142", external_link=True, target="_blank", className="d-grid gap-2",),
+                                                ]
+                                            ),
+                                        ],
+                                    ), width=6, lg=3),
+
+                            dbc.Col(dbc.Card(
+                                        [
+                                            dbc.CardImg(src="/assets/imgs/caro.jpg", top=True),
+                                            dbc.CardBody(
+                                                [
+                                                    html.H4("Carolay Helena Meza", className="card-title"),
+                                                    html.P("Administradora de Mercadeo", className="card-text",),
+                                                    dbc.Button("LinkedIn Profile", color="success", href="https://www.linkedin.com/in/carolay-helena-meza-mesa-078a69226/", external_link=True, target="_blank", className="d-grid gap-2",),
+                                                ]
+                                            ),
+                                        ],                                      
+                                    ), width=6, lg=3),
+                                    
                             dbc.Col(dbc.Card(
                                         [
                                             dbc.CardImg(src="/assets/imgs/david.png", top=True),
