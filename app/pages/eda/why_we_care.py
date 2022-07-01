@@ -158,6 +158,7 @@ layout = dbc.Container(
         and residence, place of death, age of the deceased and level of education, this database contains
         only information from 2020.""", style={"textAlign": "center", "fontSize": 25}),
         ],), 
+        
         html.Hr(),
 
         dbc.Tabs(

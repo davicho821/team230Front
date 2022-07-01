@@ -55,5 +55,4 @@ server = app.server
 
 # Testing server, don't use in production, host
 if __name__ == "__main__":
-    app.run(debug=True)
-    #app.run()
+    app.run()
