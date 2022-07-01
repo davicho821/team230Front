@@ -8,19 +8,12 @@ dash.register_page(__name__, path="/")
 layout = html.Div(
     dbc.Container(
         [
-            #html.H1("Breast Cancer", className="display-3"),
             dbc.Carousel(
             items=[
                 {"key": "1", "src": "/assets/imgs/slide01.png"},
-                #{"key": "2", "src": "/assets/imgs/slide02.jpg"},
-                #{"key": "3", "src": "/assets/imgs/slide03.jpg"},
             ],
-            #controls=True,
-            #indicators=False,
-            #interval=5000,
             ride="carousel",
             ),
-
             html.Hr(className="my-2"), 
             dbc.Card(
                         [
@@ -61,11 +54,8 @@ layout = html.Div(
                                         className="col-md-8",
                                     ),
                                 ],
-                                #className="g-0 d-flex align-items-center",
                             )
                         ],
-                        #className="mb-3",
-                        #style={"maxWidth": "540px"},
                     )
         ],
         fluid=True,
